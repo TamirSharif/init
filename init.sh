@@ -1,13 +1,27 @@
+echo -e "\e[42mUpdating Software"
+echo -e "\e[0m"
 apt update -y
 apt upgrade -y
+
+echo -e "\e[42mInstalling Node and NPM"
+echo -e "\e[0m"
 apt install nodejs -y
 apt install npm -y
 
+echo -e "\e[42mInstalling Certbot (For adding HTTPS certificates)"
+echo -e "\e[0m"
 apt-get install certbot -y
+echo -e "\e[42mPlease enter your infor"
+echo -e "\e[0m"
 certbot certonly --standalone
 
+echo -e "\e[42mAdding Hello World index.js file"
+echo -e "\e[0m"
 cp ~/init/index.js ~/index.js
 cd ~/
+
+echo -e "\e[42mInstalling Nodemon"
+echo -e "\e[0m"
 npm install -g nodemon
 
 echo -e "\e[42mInstalled:"
