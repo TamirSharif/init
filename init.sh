@@ -23,6 +23,9 @@ cd ~/
 echo -e "\e[42mInstalling Nodemon"
 echo -e "\e[0m"
 npm install -g nodemon
+echo -e "\e[42mInstalling react app generation tool"
+echo -e "\e[0m"
+npm install -g create-react-app
 
 echo -e "\e[42mInstalled:"
 echo -e "\e[0m    ★ Node.js\n    ★ NPM\n    ★ Certbot\n    ★ Nodemon"
