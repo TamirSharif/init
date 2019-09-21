@@ -7,8 +7,6 @@ echo -e "\e[42mInstalling Node and NPM"
 echo -e "\e[0m"
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 apt install nodejs -y
-apt install npm -y
-npm install npm -g
 
 echo -e "\e[42mInstalling Certbot (For adding HTTPS certificates)"
 echo -e "\e[0m"
