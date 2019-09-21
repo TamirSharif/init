@@ -1,5 +1,5 @@
 
-cp index.js ~/index.js
+cp ~/init/index.js ~/index.js
 cd ~/
 npm install -g nodemon
 
