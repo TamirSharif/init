@@ -33,7 +33,7 @@ npm install express http https path fs react react-dom babel-core babel-loader b
 
 echo -e "\e[42mAdding Hello World index.js file"
 echo -e "\e[0m"
-cp ~/init/index.js ~/&projectName/index.js
+cp ~/init/index.js ~/$projectName/index.js
 cd ~/
 rm init -r
 
