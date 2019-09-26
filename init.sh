@@ -11,8 +11,6 @@ apt install nodejs -y
 echo -e "\e[42mInstalling Certbot (For adding HTTPS certificates)"
 echo -e "\e[0m"
 apt-get install certbot -y
-echo -e "\e[42mPlease enter your infor"
-echo -e "\e[0m"
 certbot certonly --standalone
 
 echo -e "\e[42mInstalling Nodemon"
