@@ -14,9 +14,9 @@ const app = express();
 const projectName = 'ENTER_NAME_OF_PROJECT';
 
 
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/' + projectName + '.tamirsharif.co.uk/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/' + projectName + '.tamirsharif.co.uk/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/' + projectName + '.tamirsharif.co.uk/chain.pem', 'utf8');
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/' + projectName + '.tamir.uk/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/' + projectName + '.tamir.uk/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/' + projectName + '.tamir.uk/chain.pem', 'utf8');
 
 const credentials = {
     key: privateKey,
