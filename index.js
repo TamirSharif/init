@@ -41,6 +41,7 @@ app.use(express.urlencoded({
 // Main Page ==================================================================
 app.get('/', (req, res) => {
     res.send('<h1>Hello World</h1>');
+    //res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 
