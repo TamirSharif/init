@@ -3,7 +3,7 @@ apt update -y
 apt upgrade -y
 
 echo -e "\e[42mInstalling Node and NPM\e[0m"
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 apt install nodejs -y
 
 echo -e "\e[42mInstalling Certbot (For adding HTTPS certificates)\e[0m"
