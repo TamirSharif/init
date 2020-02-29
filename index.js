@@ -32,7 +32,7 @@ app.use(function (req, res, next) {
     }
 });
 
-app.use(express.static('web/assets'));
+app.use(express.static('public'));
 
 app.use(express.urlencoded({
     extended: false
@@ -40,8 +40,8 @@ app.use(express.urlencoded({
 
 // Main Page ==================================================================
 app.get('/', (req, res) => {
-    res.send('<h1>Hello World</h1>');
-    //res.sendFile(path.join(__dirname + '/index.html'));
+    res.sendFile(path.join(__dirname + 'web/index.html'));
+    //res.send('<h1>Hello World</h1>'); //If you want to just send plain Text
 });
 
 
