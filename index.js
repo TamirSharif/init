@@ -40,7 +40,7 @@ app.use(express.urlencoded({
 
 // Main Page ==================================================================
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + 'web/index.html'));
+    res.sendFile(path.join(__dirname + '/web/index.html'));
     //res.send('<h1>Hello World</h1>'); //If you want to just send plain Text
 });
 
